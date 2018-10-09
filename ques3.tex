@@ -1,0 +1,157 @@
+
+
+\documentclass{beamer}
+
+
+\usetheme{default}
+
+\title{Soft Computing}
+
+
+\subtitle{Genetic Algorithm}
+
+\author{By Kalpana Paliwal}
+
+
+\date{\today}
+
+\subject{Theoretical Computer Science}
+
+\AtBeginSubsection[]
+{
+  \begin{frame}<beamer>{Outline}
+    \tableofcontents[currentsection,currentsubsection]
+  \end{frame}
+}
+
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}{Outline}
+  \tableofcontents
+ 
+\end{frame}
+
+\section{Introduction}
+
+\subsection{Biological relation with GA}
+
+\begin{frame}{Introduction}{Biological relation}
+  \begin{itemize}
+  \item {
+   Population:-set of input data
+  }
+  \item {
+  Chromosome:- Individual input
+  }
+  \end{itemize}
+\end{frame}
+
+\subsection{Operators}
+
+
+\begin{frame}{Operators}
+  \begin{itemize}
+  \item {
+   Selection Operator
+    \pause 
+  }
+  \item {   
+   Mutation Operator
+  }
+ 
+  \item<3-> {
+   Crossover Operator
+  }
+  \item<4-> {
+  Reproduction Operator
+  }
+ 
+  
+  \end{itemize}
+\end{frame}
+
+\section{Genetic Algorithm}
+
+\subsection{Theorem}
+
+\begin{frame}{Genetic Algorithm}
+\begin{block}{What is GA?}
+Adaptive heuristic search algorithm based on the evolutionary ideas of natural selection and genetics
+
+\end{block}
+\end{frame}
+\begin{frame}
+\begin{theorem}
+\begin{itemize}
+\item{
+[Start] Generate random population of n chromosomes. 
+}
+\item{
+[Fitness] Evaluate the fitness f(x) of each chromosome x in the population. 
+}
+\item{
+[New population] Create 	a new population by repeating following  steps until the new population is complete. 
+\begin{itemize}
+\item [Selection] Select chromosomes from a population according to their fitness (better the fitness, bigger the chance to be selected) .
+\item [Crossover] With a crossover probability, crossover the parents to form new offspring (children). 
+\item [Mutation] With a mutation probability, mutate new offspring at each locus (position in chromosome/genes). 
+\item [Accepting] Place new offspring in the new population.
+
+\end{itemize}
+}
+
+\item{
+[Replace] Use new generated population for a further run of the algorithm.
+}
+\item{
+[Test] If the end condition is satisfied, stop, and return the best solution in current population.
+}
+\item{
+[Loop] Go to step 2. 
+}
+\end{itemize}
+
+\end{theorem}
+\end{frame}
+
+
+\section*{Application}
+
+\begin{frame}{Application}
+  \begin{itemize}
+  \item
+  Traveling Salesman Problem (TSP), 
+  \item
+Circuit design,
+  \item
+Job shop scheduling,
+  \item
+Minimum spanning tree,
+  \item
+Time table designing,
+  \item
+Video and sound quality optimization. 
+
+ 
+  \end{itemize}
+  
+ 
+ 
+\end{frame}
+
+\begin{frame}
+Thank you
+\end{frame}
+
+
+
+
+
+\end{document}
+
+

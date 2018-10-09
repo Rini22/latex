@@ -1,0 +1,33 @@
+\documentclass{report}
+\usepackage{color}   %May be necessary if you want to color links
+\usepackage{hyperref}
+
+\hypersetup{
+    colorlinks=true, %set true if you want colored links
+    linktoc=all,     %set to all if you want both sections and subsections linked
+    linkcolor=blue,  %choose some color if you want links to stand out
+}
+
+
+\begin{document}
+\tableofcontents
+
+\chapter{First chapter: hello world program}
+Hello this is kalpana's first latex file!!
+
+\chapter{Math formulas}
+\section{Einstien's formula}
+$E = mc^2 $, $ f(x) = \sqrt{e^{e^x}} $
+\subsection{integration}
+$$\int{sin(x)}d{x} $$
+\subsubsection{differentiation}
+$$ y=logx $$
+$$ \frac{d{y}}{d{x}}=\frac{d}{d{x}}logx $$
+
+
+
+This is some example text\footnote{\label{myfootnote}Hello footnote}.
+This is some example text\footnote{\label{mfootnote}Hello footnote}.
+This is some example text\footnote{\label{newfootnote}Hello footnote}.
+
+\end{document}
